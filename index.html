@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>YAY! It's BOGO - Upsell</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <header class="card__header">
+        <h1 class="card__title">YAY! It’s BOGO</h1>
+      </header>
+
+      <!-- Offer 1: 1 Unit -->
+      <article class="offer" data-offer="1">
+        <label class="offer__inner">
+          <div class="offer__left">
+            <input
+              type="radio"
+              name="offer"
+              class="offer__radio"
+              value="1"
+              checked
+            />
+            <div class="offer__texts">
+              <div class="offer__title-row">
+                <span class="offer__title">1 Unit</span>
+                <span class="offer__badge">10% Off</span>
+              </div>
+              <span class="offer__subtitle">Standard Price</span>
+            </div>
+          </div>
+          <div class="offer__right">
+            <span class="offer__price">$10.00 USD</span>
+            <span class="offer__price-old">$24.00 USD</span>
+          </div>
+        </label>
+
+        <!-- Collapsible content (empty for 1 Unit) -->
+        <div class="offer__content"></div>
+      </article>
+
+      <!-- Offer 2: 2 Units (Most popular, expanded) -->
+      <article class="offer offer--active" data-offer="2">
+        <div class="offer__ribbon">MOST POPULAR</div>
+
+        <label class="offer__inner">
+          <div class="offer__left">
+            <input
+              type="radio"
+              name="offer"
+              class="offer__radio"
+              value="2"
+            />
+            <div class="offer__texts">
+              <div class="offer__title-row">
+                <span class="offer__title">2 Unit</span>
+                <span class="offer__badge">20% Off</span>
+              </div>
+              <span class="offer__subtitle">Best value</span>
+            </div>
+          </div>
+          <div class="offer__right">
+            <span class="offer__price">$18.00 USD</span>
+            <span class="offer__price-old">$24.00 USD</span>
+          </div>
+        </label>
+
+        <!-- Collapsible content: size/colour rows -->
+        <div class="offer__content offer__content--expanded">
+          <div class="offer__meta-row">
+            <span class="offer__meta-label">Size</span>
+            <span class="offer__meta-label">Colour</span>
+          </div>
+
+          <div class="offer__line">
+            <span class="offer__line-label">#1</span>
+            <select class="offer__select offer__select--size">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+            <select class="offer__select offer__select--color">
+              <option value="Black">Black</option>
+              <option value="White">White</option>
+              <option value="Red">Red</option>
+            </select>
+          </div>
+
+          <div class="offer__line">
+            <span class="offer__line-label">#2</span>
+            <select class="offer__select offer__select--size">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+            <select class="offer__select offer__select--color">
+              <option value="Colour">Colour</option>
+              <option value="Black">Black</option>
+              <option value="White">White</option>
+              <option value="Red">Red</option>
+            </select>
+          </div>
+        </div>
+      </article>
+
+      <!-- Offer 3: 3 Units -->
+      <article class="offer" data-offer="3">
+        <label class="offer__inner">
+          <div class="offer__left">
+            <input
+              type="radio"
+              name="offer"
+              class="offer__radio"
+              value="3"
+            />
+            <div class="offer__texts">
+              <div class="offer__title-row">
+                <span class="offer__title">3 Unit</span>
+                <span class="offer__badge">30% Off</span>
+              </div>
+            </div>
+          </div>
+          <div class="offer__right">
+            <span class="offer__price">$24.00 USD</span>
+            <span class="offer__price-old">$24.00 USD</span>
+          </div>
+        </label>
+
+        <div class="offer__content"></div>
+      </article>
+
+      <!-- Footer: free delivery + total + CTA -->
+      <footer class="card__footer">
+        <div class="card__row">
+          <span class="card__free">Free Delivery</span>
+          <span class="card__total">Total : $18.00 USD</span>
+        </div>
+
+        <button class="card__cta" type="button">
+          + Add to Cart
+        </button>
+
+        <p class="card__powered">@ Powered by Pumper</p>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
